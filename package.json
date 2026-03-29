@@ -1,0 +1,27 @@
+{
+    "name": "byblis",
+    "version": "0.0.1",
+    "description": "",
+    "main": "dist/main.js",
+    "scripts": {
+        "build": "tsx build.ts",
+        "watch": "tsc --watch",
+        "prestart": "npm run build",
+        "start": "node dist/main.js",
+        "dev": "tsc && node dist/main.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "",
+    "devDependencies": {
+        "@types/node": "^22.14.0",
+        "@types/nw.js": "^0.13.20",
+        "esbuild": "^0.25.2",
+        "tsx": "^4.6.2",
+        "typescript": "^5.8.2"
+    },
+    "dependencies": {
+        "chalk": "^5.4.1",
+        "file-type": "^20.4.1"
+    }
+}
